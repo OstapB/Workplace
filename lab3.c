@@ -70,6 +70,6 @@ void calcMatr(int Matrix[][N])
 		mean_geometric_value *= Sum;
 
 	}
-	mean_geometric_value = pow(geo, 1.0 / N);
-	printf("geo = %f\n", geo);
+	mean_geometric_value = pow(mean_geometric_value, 1.0 / N);
+	printf("geo = %f\n", mean_geometric_value);
 } 
