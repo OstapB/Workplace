@@ -3,9 +3,9 @@
 #include <math.h>
 #include <cstdlib>
 #define N 5
-void selectionSort(int Matrix[][N]);
-void outMatrix(int Matrix[][N]);
-void calcMatr(int Matrix[][N]);
+void selectionSortbyColumns(int Matrix[][N]);
+void outputMatrix(int Matrix[][N]);
+void calculateMatr(int Matrix[][N]);
 int main()
 {
 	int Matrix[N][N] =
@@ -15,14 +15,14 @@ int main()
 	   -2, -7, -1, -9, 0,
 	   13, 61, 60, 42, -10,
 	   1, 0, 4, 0, 16 };
-	outMatrix(Matrix);
-	selectionSort(Matrix);
-	outMatrix(Matrix);
-	calcMatr(Matrix);
+	outputMatrix(Matrix);
+	selectionSortbyColumns(Matrix);
+	outputMatrix(Matrix);
+	calculateMatrix(Matrix);
 	system("pause");
 	return 0;
 }
-void selectionSort(int Matrix[][N])
+void selectionSortbyColumns(int Matrix[][N])
 {
 	int temp;
 	int index;
@@ -46,7 +46,7 @@ void selectionSort(int Matrix[][N])
 	}
 }
 
-void outMatrix(int Matrix[][N])
+void outputMatrix(int Matrix[][N])
 {
 	for (int i = 0;i < N;++i) {
 		for (int j = 0;j < N;++j)
@@ -56,7 +56,7 @@ void outMatrix(int Matrix[][N])
 	printf("\n");
 
 }
-void calcMatr(int Matrix[][N])
+void calculateMatrix(int Matrix[][N])
 {
 	float mean_geomertic_value = 1;
 	int Sum;
